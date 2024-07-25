@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+      
+        <h1>Gallery</h1>
+
+    <div class="img-container">
+        <div class="image"><img src="img1.jfif"></div>
+        <div class="image"><img src="img2.jfif"></div>
+        <div class="image"><img src="img3.jfif"></div>
+        <div class="image"><img src="img4.jfif"></div>
+        <div class="image"><img src="img5.jfif"></div>
+        <div class="image"><img src="img6.jfif"></div>
+        <div class="image"><img src="img7.jfif"></div>
+        <div class="image"><img src="img8.jfif"></div>
+        <div class="image"><img src="img9.jfif"></div>
+        <div class="image"><img src="img10.jfif"></div>
+        <div class="image"><img src="img11.jfif"></div>
+    </div>
+
+    <div class="popup_img">
+        <span>&times;</span>
+        <img src="img1.jfif">
+    </div>
+
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.img-container img').forEach(image =>{
+
+            image.onclick = () =>{
+            document.querySelector('.popup_img').style.display = 'block'
+            document.querySelector('.popup_img img').src = image.getAttribute('src')
+            }
+         })
+
+         document.querySelector('.popup_img span').onclick = () =>{
+              document.querySelector('.popup_img').style.display = 'none'
+         }
+         {}
+
+
+      
+    </script>
+    
+</body>
+</html>
